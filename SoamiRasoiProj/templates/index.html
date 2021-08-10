@@ -1,0 +1,393 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href={% static "img/apple-touch-icon.png" %}>
+	<link rel="icon" type="image/png" sizes="32x32" href={% static "img/favicon-32x32.png" %}>
+	<link rel="icon" type="image/png" sizes="16x16" href={% static "img/favicon-16x16.png" %}>
+	<link rel="manifest" href={% static "img/site.webmanifest" %}>
+	<link rel="mask-icon" href={% static "img/safari-pinned-tab.svg" %} color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Soami's Rasoi|Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+	<link href={% static "css/templatemo-style.css" %} rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+
+<body>
+
+	<div class="container">
+		<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src={% static "img/front.jpeg" %}>
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src={% static "img/simple-house-logo.png" %} alt="Logo" class="tm-site-logo" />
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Soami's Rasoi</h1>
+								<h6 class="tm-site-description">new restaurant in the town</h6>
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to Soami's Rasoi</h2>
+				<p class="col-12 text-center">Total 3 HTML pages are included in this template. Header image has a
+					parallax effect. You can feel free to download, edit and use this TemplateMo layout for your
+					commercial or non-commercial websites.</p>
+			</header>
+
+
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">SouthIndian</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Chinese</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Beverages</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">NorthIndian</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Parantha</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Breads</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Soups</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Desserts</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Rice</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Raita</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Salad</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Breakfast</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">StartersPlattersSizzlers</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Cakes</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Thali</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-southindian" class="tm-gallery-page">
+					{% for item in food %}
+					{% if item.ItemCat == 'SouthIndian' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 1 -->
+
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-chinese" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Chinese' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 2 -->
+
+				<!-- gallery page 3 -->
+				<div id="tm-gallery-page-beverages" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Beverages' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 3 -->
+				<!-- gallery page 4 -->
+				<div id="tm-gallery-page-northindian" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'NorthIndian' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 4 -->
+				<!-- gallery page 5 -->
+				<div id="tm-gallery-page-parantha" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Parantha' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 5 -->
+				<!-- gallery page 6 -->
+				<div id="tm-gallery-page-breads" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Breads' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 6 -->
+				<!-- gallery page 7 -->
+				<div id="tm-gallery-page-soups" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Soups' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 7 -->
+				<!-- gallery page 8 -->
+				<div id="tm-gallery-page-desserts" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Desserts' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 8 -->
+				<!-- gallery page 9 -->
+				<div id="tm-gallery-page-rice" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Rice' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 9 -->
+				<!-- gallery page 10 -->
+				<div id="tm-gallery-page-raita" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Raita' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 10 -->
+				<!-- gallery page 11 -->
+				<div id="tm-gallery-page-salad" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Salad' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 11 -->
+				<!-- gallery page 12 -->
+				<div id="tm-gallery-page-breakfast" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Breakfast' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 12 -->
+				<!-- gallery page 13 -->
+				<div id="tm-gallery-page-startersplatterssizzlers" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'StartersPlattersSizzlers' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 13 -->
+				<!-- gallery page 14 -->
+				<div id="tm-gallery-page-cakes" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Cakes' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 14 -->
+				<!-- gallery page 15 -->
+				<div id="tm-gallery-page-thali" class="tm-gallery-page hidden">
+					{% for item in food %}
+					{% if item.ItemCat == 'Thali' %}
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
+								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
+								<p class="tm-gallery-price">₹{{item.ItemPrice}}</p>
+							</figcaption>
+						</figure>
+					</article>
+					{% endif %}
+					{% endfor %}
+				</div> <!-- gallery page 15 -->
+			</div>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src={% static "img/img-01.jpg" %} alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box">
+							<h4 class="tm-gallery-title">Maecenas nulla neque</h4>
+							<p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template
+								collection site is strictly prohibited. You will need to <a rel="nofollow"
+									href="https://templatemo.com/contact">talk to us</a> for additional permissions
+								about our templates. Thank you.</p>
+							<a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2020 Soami's Rasoi
+
+				| Design: <a rel="nofollow" href="https://www.instagram.com/v_anhad/">AnhadVuppuluri</a></p>
+		</footer>
+	</div>
+	<script src={% static "js/jquery.min.js" %}></script>
+	<script src={% static "js/parallax.min.js" %}></script>
+	<script>
+		$(document).ready(function () {
+			// Handle click on paging links
+			$('.tm-paging-link').click(function (e) {
+				e.preventDefault();
+
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>
