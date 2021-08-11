@@ -1,0 +1,1 @@
+web: gunicorn SoamiRasoiProj.wsgi --log-file -
