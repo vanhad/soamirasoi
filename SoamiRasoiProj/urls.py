@@ -20,6 +20,11 @@ from django.conf.urls.static import static
 
 from django.views.static import serve
 from django.conf.urls import url
+from django.contrib import admin
+
+admin.site.site_header = 'Soami Rasoi Admin Panel'                    # default: "Django Administration"
+admin.site.index_title = 'Soami Rasoi Administrator'                 # default: "Site administration"
+admin.site.site_title = 'Soami Rasoi Adminsitration' # default: "Django site admin"
 
 urlpatterns = [
     path('', include('SoamiRasoiApp.urls')),
