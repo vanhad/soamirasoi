@@ -10,8 +10,6 @@ allFood = []
 
 catFood = Food.objects.values('ItemCat','id')
 cats = {item['ItemCat'] for item in catFood}
-print(cats,food)
-
 
 # Create your views here.
 def index(request):
