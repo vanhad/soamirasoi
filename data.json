@@ -1,0 +1,57 @@
+[
+{
+    "model": "SoamiRasoiApp.food",
+    "pk": 2,
+    "fields": {
+        "ItemName": "Chola Bhatura",
+        "ItemCat": "NorthIndian",
+        "ItemDesc": "hgv dsvkjn sdc",
+        "ItemPrice": 120,
+        "ItemImage": "pics/01_dxkSRd1.jpg"
+    }
+},
+{
+    "model": "SoamiRasoiApp.food",
+    "pk": 3,
+    "fields": {
+        "ItemName": "Paneer Tikkaa",
+        "ItemCat": "NorthIndian",
+        "ItemDesc": "nmbvnb mnnbkj",
+        "ItemPrice": 110,
+        "ItemImage": "pics/02_1r8388s.jpg"
+    }
+},
+{
+    "model": "SoamiRasoiApp.food",
+    "pk": 4,
+    "fields": {
+        "ItemName": "Thali pj",
+        "ItemCat": "NorthIndian",
+        "ItemDesc": "mnbmn jk",
+        "ItemPrice": 150,
+        "ItemImage": "pics/butter-chicken-1.jpg"
+    }
+},
+{
+    "model": "SoamiRasoiApp.food",
+    "pk": 5,
+    "fields": {
+        "ItemName": "Chola Bhatura2",
+        "ItemCat": "NorthIndian",
+        "ItemDesc": "nm",
+        "ItemPrice": 33,
+        "ItemImage": "pics/butter-chicken-1_ddmGgUC.jpg"
+    }
+},
+{
+    "model": "SoamiRasoiApp.food",
+    "pk": 6,
+    "fields": {
+        "ItemName": "Chola Bhatura2",
+        "ItemCat": "NorthIndian",
+        "ItemDesc": "bnvn",
+        "ItemPrice": 33,
+        "ItemImage": "pics/butter-chicken-1_aM5Ldjj.jpg"
+    }
+}
+]
