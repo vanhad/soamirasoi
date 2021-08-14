@@ -5,18 +5,15 @@ from .models import Food,Contact
 from django.contrib import messages
 
 
-# food = Food.objects.all()
-# allFood = []
+food = Food.objects.all()
+allFood = []
 
-# catFood = Food.objects.values('ItemCat','id')
-# cats = {item['ItemCat'] for item in catFood}
+catFood = Food.objects.values('ItemCat','id')
+cats = {item['ItemCat'] for item in catFood}
 
-
-# , {'food': food,'cats': cats}
 # Create your views here.
-
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html', {'food': food,'cats': cats})
     # return HttpResponse("hello")
 
 def about(request):
