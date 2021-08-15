@@ -171,5 +171,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # SECRET_KEY = os.environ.get('SECRET_KEY')
 # EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# # EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'vanhad72@gmail.com' #my gmail username
+EMAIL_HOST_PASSWORD = '%9!M8rg*3nNCLNWl' #my gmail password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "Justin <hungrypy@gmail.com>"
+
+
+ADMINS = [('Justin', EMAIL_HOST_USER)]
+MANAGERS = ADMINS
