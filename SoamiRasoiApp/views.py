@@ -5,17 +5,18 @@ from .models import Food,Contact
 from django.contrib import messages
 
 
-food = Food.objects.all()
-allFood = []
+# food = Food.objects.all()
+# allFood = []
 
-catFood = Food.objects.values('ItemCat','id')
-cats = {item['ItemCat'] for item in catFood}
+# catFood = Food.objects.values('ItemCat','id')
+# cats = {item['ItemCat'] for item in catFood}
 
 
 # Create your views here.
+# , {'food': food,'cats': cats}
 
 def index(request):
-    return render(request, 'index.html', {'food': food,'cats': cats})
+    return render(request, 'index.html')
     # return HttpResponse("hello")
 
 def about(request):
@@ -24,11 +25,11 @@ def about(request):
 def contactUs(request):
     if request.method =='POST':
 
-        contact = Contact()
-        contact.Name = request.POST.get('name')
-        contact.Email=request.POST.get('email')
-        contact.Message=request.POST.get('message')
-        contact.save()
+        # contact = Contact()
+        # contact.Name = request.POST.get('name')
+        # contact.Email=request.POST.get('email')
+        # contact.Message=request.POST.get('message')
+        # contact.save()
         messages.success(request, 'Thanks for connecting to Us! Team will get back to you shortly!!')
 
     return render(request, 'contact.html')
