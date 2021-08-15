@@ -24,11 +24,19 @@ def about(request):
 
 def contactUs(request):
     if request.method =='POST':
+<<<<<<< HEAD
         # contact = Contact()
         # contact.Name = request.POST.get('name')
         # contact.Email=request.POST.get('email')
         # contact.Message=request.POST.get('message')
         # contact.save()
+=======
+#         contact = Contact()
+#         contact.Name = request.POST.get('name')
+#         contact.Email=request.POST.get('email')
+#         contact.Message=request.POST.get('message')
+#         contact.save()
+>>>>>>> 35fd2198aadabfbbc82b6b8a667425490480d595
         messages.success(request, 'Thanks for connecting to Us! Team will get back to you shortly!!')
 
     return render(request, 'contact.html')
