@@ -138,9 +138,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_HOST = 'https://d4663kmspf1sqa.cloudfront.net' if not DEBUG else ''
-STATIC_URL = STATIC_HOST + '/static/'
-# STATIC_URL = '/static/'
+# STATIC_HOST = 'https://d4663kmspf1sqa.cloudfront.net' if not DEBUG else ''
+# STATIC_URL = STATIC_HOST + '/static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
@@ -154,7 +154,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
