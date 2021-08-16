@@ -157,7 +157,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # STATIC_ROOT = os.path.join(BASE_DIR, "live-static-files", "static-root")
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 #STATIC_ROOT = "/home/cfedeploy/webapps/cfehome_static_root/"
 
@@ -179,7 +179,7 @@ EMAIL_HOST_USER = 'vanhad72@gmail.com' #my gmail username
 EMAIL_HOST_PASSWORD = '%9!M8rg*3nNCLNWl' #my gmail password
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = "Justin <hungrypy@gmail.com>"
+DEFAULT_FROM_EMAIL = "Anhad <vanhad72@gmail.com>"
 
 
 ADMINS = [('Anhad', EMAIL_HOST_USER)]
