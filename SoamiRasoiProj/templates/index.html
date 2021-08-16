@@ -1,4 +1,5 @@
 {% load static %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html>
 
@@ -93,7 +94,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'SouthIndian' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -111,7 +112,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Chinese' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -129,7 +130,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Beverages' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -146,7 +147,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'NorthIndian' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -163,7 +164,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Parantha' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -180,7 +181,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Breads' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -197,7 +198,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Soups' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -214,7 +215,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Desserts' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -231,7 +232,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Rice' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -248,7 +249,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Raita' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -265,7 +266,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Salad' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -282,7 +283,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Breakfast' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -299,7 +300,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'StartersPlattersSizzlers' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -316,7 +317,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Cakes' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
@@ -333,7 +334,7 @@ https://templatemo.com/tm-539-simple-house
 					{% if item.ItemCat == 'Thali' %}
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
-							<img src={{item.ItemImage.url}} alt="Image" class="img-fluid tm-gallery-img" />
+							<img src={{baseUrl}}{{item.ItemImage}} alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
 								<h4 class="tm-gallery-title">{{item.ItemName}}</h4>
 								<p class="tm-gallery-description">{{item.ItemDesc}}</p>
