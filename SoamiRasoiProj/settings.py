@@ -182,5 +182,5 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "Justin <hungrypy@gmail.com>"
 
 
-ADMINS = [('Justin', EMAIL_HOST_USER)]
+ADMINS = [('Anhad', EMAIL_HOST_USER)]
 MANAGERS = ADMINS
