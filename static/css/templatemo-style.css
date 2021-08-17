@@ -393,6 +393,8 @@ p, address {
 .tm-gallery-img {
   width: 25vw;
   height: 25vw;
+  max-height: 180px;
+  max-width: 180px;
   margin-bottom: 2vw;
   /* object-fit: cover; */
 }
