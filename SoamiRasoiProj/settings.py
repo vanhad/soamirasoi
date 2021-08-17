@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+# from boto import GM_ID
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -176,8 +177,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'vanhad72@gmail.com' #my gmail username
-EMAIL_HOST_PASSWORD = '%9!M8rg*3nNCLNWl' #my gmail password
+EMAIL_HOST_USER = os.environ.get('GM_ID')
+EMAIL_HOST_PASSWORD = os.environ.get('GM_PASS')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "Anhad <vanhad72@gmail.com>"
