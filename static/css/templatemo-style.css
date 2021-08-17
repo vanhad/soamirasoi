@@ -391,10 +391,10 @@ p, address {
 }
 
 .tm-gallery-img {
-  /* width: 200px;
-  height: 150px; */
-  object-fit: cover;
-  margin-bottom: 20px;
+  width: 25vw;
+  height: 25vw;
+  margin-bottom: 2vw;
+  /* object-fit: cover; */
 }
 
 .tm-gallery-title {
