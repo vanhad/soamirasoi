@@ -400,12 +400,6 @@ p, address {
   margin-bottom: 20px;
 }
 
-.figure *{
-  margin-inline-start: 20vw;
-  margin-inline-end: 22vw;
-}
-
-
 .tm-gallery-title {
   font-size: 1.3rem;
   font-weight: 400;
