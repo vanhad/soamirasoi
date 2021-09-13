@@ -211,7 +211,7 @@ p, address {
 /* Set width and height in JS */
 .placeholder {
   width: 100%;
-  min-height: 460px;
+  min-height: calc(120vw / 1.77777);
   background-color: #556E5B;
 }
 
@@ -224,7 +224,7 @@ p, address {
 }
 
 .parallax-window {
-  min-height: 460px;
+  min-height: calc(120vw / 1.77777);
   background: transparent;
   position: relative;
 }
@@ -391,6 +391,12 @@ p, address {
 }
 
 .tm-gallery-img {
+  /* width: 25vw;
+  height: 25vw;
+  max-height: 180px;
+  max-width: 180px;
+  margin-bottom: 2vw; */
+  /* object-fit: cover; */
   margin-bottom: 20px;
 }
 
